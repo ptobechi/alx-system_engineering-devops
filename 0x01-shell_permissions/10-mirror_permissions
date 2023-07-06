@@ -1,2 +1,2 @@
 #!/bin/bash
-chmod olleh hello
+sudo chgrp olleh hello
