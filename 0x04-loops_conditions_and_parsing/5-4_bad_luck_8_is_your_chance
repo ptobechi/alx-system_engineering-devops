@@ -10,10 +10,10 @@ do
     # Using if, elif, and else statements for different iterations
     if [ $counter -eq 4 ]
     then
-        echo "Bad Luck"
+        echo "bad Luck"
     elif [ $counter -eq 8 ]
     then
-        echo "Good Luck"
+        echo "good Luck"
     else
         echo "Best School"
     fi

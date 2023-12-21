@@ -2,25 +2,18 @@
 # a script that displays the time 12hr and 59min
 
 # Initializing variables
-hours=0
+hour=0
 
-# Using a while loop to iterate over hours
-while [ $hours -le 12 ]
+while [ $hour -lt 12 ]
 do
-    minutes=1
+    echo "Hour: $hour"
 
-    # Using a while loop to iterate over minutes
-    while [ $minutes -le 59 ]
+    minute=1
+    while [ $minute -lt 60 ]
     do
-        # Formatting hours and minutes
-        formatted_hours=$(printf "%02d" $hours)
-        formatted_minutes=$(printf "%02d" $minutes)
-
-        # Displaying time
-        echo "$formatted_hours:$formatted_minutes"
-
-        ((minutes++))
+        echo "$minute"
+        ((minute++))
     done
 
-    ((hours++))
-done | head -n 70
+    ((hour++))
+done

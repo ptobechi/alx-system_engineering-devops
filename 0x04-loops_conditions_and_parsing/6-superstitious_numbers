@@ -13,13 +13,16 @@ do
     # Using a case statement for different iterations
     case $counter in
         4)
-            echo "$counter and then bad luck from China"
+	    echo "$counter"
+            echo "bad luck from China"
             ;;
         9)
-            echo "$counter and then bad luck from Japan"
+	    echo "$counter"
+            echo "bad luck from Japan"
             ;;
         17)
-            echo "$counter and then bad luck from Italy"
+	    echo "$counter"
+            echo "bad luck from Italy"
             ;;
         *)
             echo $counter
