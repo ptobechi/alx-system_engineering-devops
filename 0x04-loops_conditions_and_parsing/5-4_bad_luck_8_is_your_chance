@@ -1,0 +1,22 @@
+#!/usr/bin/env bash
+# a script that loops 1 - 10 and displays badluck goodluck and best schools
+
+# Initializing a counter
+counter=1
+
+# Using a while loop to iterate from 1 to 10
+while [ $counter -le 10 ]
+do
+    # Using if, elif, and else statements for different iterations
+    if [ $counter -eq 4 ]
+    then
+        echo "Bad Luck"
+    elif [ $counter -eq 8 ]
+    then
+        echo "Good Luck"
+    else
+        echo "Best School"
+    fi
+
+    ((counter++))
+done

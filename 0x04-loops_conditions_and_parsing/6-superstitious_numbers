@@ -1,0 +1,30 @@
+#!/usr/bin/env bash
+# a script that numbers from 1-20 and
+# displays 4 and bad luck from china
+# displays 9 and bad luck from japan
+# displays 17 and bad luck from italy
+
+# Initializing a counter
+counter=1
+
+# Using a while loop to iterate from 1 to 20
+while [ $counter -le 20 ]
+do
+    # Using a case statement for different iterations
+    case $counter in
+        4)
+            echo "$counter and then bad luck from China"
+            ;;
+        9)
+            echo "$counter and then bad luck from Japan"
+            ;;
+        17)
+            echo "$counter and then bad luck from Italy"
+            ;;
+        *)
+            echo $counter
+            ;;
+    esac
+
+    ((counter++))
+done
