@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+# Trap the SIGTERM signal to print a message
+trap 'echo "I am invincible!!!"; exit 0' SIGTERM
+
+# Display the message indefinitely with a sleep of 2 seconds
+while true; do
+    echo "To infinity and beyond"
+    sleep 2
+done

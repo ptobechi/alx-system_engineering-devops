@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# A script that displays a list of currently running processes
+
+# Use ps command to retrieve process information
+ps aux --forest
