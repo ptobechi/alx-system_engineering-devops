@@ -1,18 +1,3 @@
 #!/usr/bin/env bash
-# Display active internet connections with listening sockets
-echo "Active Internet connections (only servers)"
-echo "Proto Recv-Q Send-Q Local Address\tForeign Address\tState\t PID/Program name"
-
-# Display listening TCP ports
-netstat -tln | awk '$6 == "LISTEN" {print "tcp6\t0\t0\t"$4"\t"$5"\t"$6"\t\t"$(NF-1)}'
-
-# Display listening UDP ports
-netstat -uln | awk '{print "udp6\t0\t0\t"$4"\t"$5"\t\t\t\t"$(NF-1)}'
-
-# Display active UNIX domain sockets with listening servers
-echo "Active UNIX domain sockets (only servers)"
-echo "Proto RefCnt Flags\tType\tState\tI-Node\tPID/Program name\tPath"
-
-# Display listening UNIX domain sockets
-netstat -x | awk '$6 == "LISTEN" {print $1"\t"$2"\t"$3"\t"$4"\t"$5"\t"$6"\t\t"$(NF-1)}'
-
+# Script that displays listening ports
+netstat -lp
