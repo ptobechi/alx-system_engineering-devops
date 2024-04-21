@@ -56,7 +56,7 @@ server {
 	}
 
 	location /airbnb-onepage/ {
-		proxy_pass http://localhost:5000/airbnb-onepage/;
+		proxy_pass http://0.0.0.0:5000/airbnb-onepage/;
 	}
 
 	# pass PHP scripts to FastCGI server
